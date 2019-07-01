@@ -11,8 +11,8 @@ pipeline {
             }
         }
         stage('test') {
-            echo "This is the test stage"
             steps {
+                echo "This is the test stage"
                 sh 'pwd'
                 sh 'echo ${BUILD_NO}'
             }
