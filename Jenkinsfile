@@ -17,5 +17,13 @@ pipeline {
                 sh 'echo ${BUILD_NO}'
             }
         }
+        stage('deploy') {
+            steps {
+                echo "This is the deploy stage"
+                sh 'pwd'
+                sh 'sleep 5'
+                sh 'echo finished'
+            }
+        }
     }
 }
