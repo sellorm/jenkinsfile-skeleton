@@ -13,8 +13,9 @@ pipeline {
             echo "This is the test stage"
             steps {
                 sh 'pwd'
-                sh 'echo ${BUILD_NO}'
+                sh 'echo $BUILD_NO'
             }
         }
     }
+}
 }
