@@ -25,5 +25,11 @@ pipeline {
                 sh 'echo finished'
             }
         }
+        stage('Archive') {
+            steps {
+                echo "This is the archive stage"
+                archiveArtifacts 'Jenkinsfile'
+            }
+        }
     }
 }
